@@ -65,12 +65,13 @@ public class Visualizar {
             float angle = radians( i );
             
             // Random Radius
-            float radius = fft.getBand( num );
+            float radius = fft.getBand( num ) + fft.specSize() / 4;
             float x      = radius * cos( angle );
             float y      = radius * sin( angle );
             
             // Center To (x, y) Point.
             stroke(0, 200, 200);
+            ellipse(x, y, radius/2, radius/2);
             line(0, 0, x, y);
         }
     
