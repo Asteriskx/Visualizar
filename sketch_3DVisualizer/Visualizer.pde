@@ -10,7 +10,7 @@ public class Visualizar {
     private int Brightness;                            // Show SomeGenerarions Visualizar Brightness
     private int Alpha;                                 // Show SomeGenerarions Visualizar Alpha
     private int VisualWidth          = 12;             // Show Visualizar Width
-    private int VisualBegin          = 20;             // Show Visualizar Stating Point
+    private int VisualBegin          = 20;             // Show Visualizar Starting Point
     private int VisualMagnification  =  2;             // Magnification
     private int col                  =  7;             // Color
     
@@ -74,7 +74,7 @@ public class Visualizar {
             line(0, 0, x, y);
         }
     
-        // Rect（Top Left X Point、Tpo Left Y Point、Rectangle Width、Rectangle Height）；
+        // Rect（Top Left X Point、Top Left Y Point、Rectangle Width、Rectangle Height）；
         rect(  num * VisualBegin, VisualHeight[num], VisualWidth, 500 );
         rect( -num * VisualBegin, VisualHeight[num], VisualWidth, 500 );
     }
